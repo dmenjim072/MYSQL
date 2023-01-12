@@ -30,3 +30,14 @@ CREATE TABLE IF NOT EXISTS profesorado
     CONSTRAINT fk_profesorado_deptos FOREIGN KEY (coddepto) REFERENCES deptos (coddepto) -- restriccion clave foranea
 		ON DELETE NO ACTION ON UPDATE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS asignaturas
+(
+	codasigna VARCHAR(30) NOT NULL, -- PRIMARY KEY
+    nomasigna VARCHAR(30) NOT NULL,
+    curso VARCHAR(30) NOT NULL,
+    CONSTRAINT pk_asignaturas PRIMARY KEY (codasigna) -- restriccion de clave primaria
+);
+
+CREATE TABLE IF NOT EXISTS asignaturas
+
