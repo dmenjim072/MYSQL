@@ -39,5 +39,11 @@ CREATE TABLE IF NOT EXISTS asignaturas
     CONSTRAINT pk_asignaturas PRIMARY KEY (codasigna) -- restriccion de clave primaria
 );
 
-CREATE TABLE IF NOT EXISTS asignaturas
+use information_schema;
+
+show tables;
+
+select * from tables;
+
+
 
